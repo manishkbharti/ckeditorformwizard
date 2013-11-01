@@ -3,7 +3,7 @@
 <head>
     <meta name="layout" content="main">
     <title>Test</title>
-    <r:require module="cvsurgeon"/>
+    <r:require module="formwizard"/>
 </head>
 
 <body>

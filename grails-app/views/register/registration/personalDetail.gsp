@@ -3,34 +3,11 @@
 <head>
     <meta name="layout" content="main">
     <title>Test</title>
-    <r:require module="cvsurgeon"/>
+    <r:require module="formwizard"/>
     <ckeditor:resources/>
 </head>
 
 <body>
-<script type="text/javascript">
-    function asd() {
-        jQuery.ajax({
-            url: "${createLink(controller: 'dashboard', action: 'index')}",
-            success: function (data) {
-                myWindow = window.open('', '', 'width=400,height=300');
-                myWindow.document.write("Ajax Response = " + data);
-                myWindow.focus();
-            }
-        });
-        %{--window.open("${g.createLink(controller: 'dashboard', action: 'index')}", '', 'width=400,height=300');--}%
-    }
-</script>
-<a href="javascript:void(0)" onclick="asd()">Click</a>
-
-<r:script type="text/javascript">
-    function openWin() {
-        myWindow = window.open('', '', 'width=400,height=300');
-        myWindow.document.write("Manish Kumar Bharti @JellyFish Technologies");
-        myWindow.focus();
-    }
-</r:script>
-<a href="javascript:void(0)" onclick="openWin();">Open</a>
 
 <div class="box box-color box-bordered">
     <div class="box-title">
